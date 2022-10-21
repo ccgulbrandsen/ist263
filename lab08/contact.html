@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <title>Contact</title>
+            <link rel="stylesheet" href="styles.css">
+        <style>
+            .box1, .box2 {display: flex; padding: 10px;}
+
+            .box1, .box2 {flex: 2; background-color: #bbd686; border-radius: 1em; margin: 10px; margin-bottom: 20px;}
+        
+            .address, .contact {margin: 20px;}
+
+            .form, .map {margin: 20px;}
+
+            
+
+        </style>
+        </head>
+
+        <body>
+
+            <nav>
+                <a href="index.html">Home</a> |
+                <a href="contact.html">Contact</a> |
+                <a href="skills.html">Skills</a>
+            </nav>
+
+            <h1>Contact</h1>
+            <h2>Cc Gulbrandsen</h2>
+
+            <div class="box1"> <!---parent div for first section-->
+
+                <div class="address">
+                    <h3>Address</h3>
+                    <p>1032 Madison Street, Syracuse, NY 13210</p>
+                    
+                </div>
+
+                <div class="contact">
+                    
+                    <h3><a href="https://www.linkedin.com/in/campbellgulbrandsen/" target="_blank">My LinkedIn Profile</a></h3>
+                    <img src="../images/sizedlinkedinlogo.png" alt="LinkedIn logo">
+                    <a href="mailto:ccgulbra@syr.edu">ccgulbra.syr.edu</a> <br>
+                    
+                </div>
+
+            </div> <!---parent div end for first section-->
+
+
+            <div class="box2">
+
+                <div class="form">
+                    <h1>Connect with me!</h1>
+                        <form action="https://formspree.io/f/mgeqkkol" method="post">
+                        <label for="email">Enter email:</label>
+                        <input type="text" id="email" name="email"><br> 
+                
+                    <p>Are you inquiring about a professional position?</p>
+                    <input type="radio" id="yes" name="answer" value="yes" checked>
+                    <label for="yes">yes</label> 
+                    <input type="radio" id="no" name="answer" value="no">
+                    <label for="no">no</label>
+
+
+            <br>
+                    <label for="question">Ask me anything!</label><br>
+                        <textarea id="question" name="question"></textarea><br>
+
+                        <input type="submit" value="submit form">
+                    </form>
+                </div>
+
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.82730554104!2d-76.13339664876574!3d43.045064899455994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f309fea9783d%3A0x78fb0370063c2237!2s1032%20Madison%20St%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1663251431910!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        
+
+
+            
+
+            
+            
+        </body>
+
+    </html>
