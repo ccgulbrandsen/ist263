@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+
+    .heading, .caption, .skillstitle, .skillslist {text-align: center;}
+
+    .bigbox, .icons, .flexbox2 {display: flex;}
+    .icons {justify-content: space-around;}
+    .flexbox2 {flex: 2; background-color: #bbd686; border-radius: 1em; margin: 60px; padding: 10px;}
+    .icons {display: flex; justify-content: space-between; flex: 8; margin-top: 20px; margin-right: 30px; margin-left: 60px; align-items: center;}
+
+    div {padding: 5px;}
+
+    #skip {
+            background-color: #dde5b6;
+            border: 1px black;
+            padding: 2px;
+            position: absolute; /* out of page flow for layout */
+            left: -999px; }
+        
+    #skip:focus {
+            left: 10px;
+            top: 30px;
+        }
+    div img {max-width:100%;}
+
+
+</style>
+</head>
+<body>
+
+    <a id="skip" tabindex="1" href="#content">Skip to Content</a><br>
+
+    <nav>
+        <a href="index.html" tabindex="2">Home</a><span> | </span>
+        <a href="contact.html" tabindex="3">Contact</a><span> | </span>
+        <a href="skills.html" tabindex="4">Skills</a>
+    </nav>
+
+
+<header>
+    <div class="heading">
+        <h1>Technical Skills</h1>
+    </div>
+
+    <div class="caption">
+        <p>Here are some skills I learned in college!</p>
+    </div>
+</header>
+
+<main>
+        <div class="bigbox"> <!--parent div-->
+            <div class="icons"> 
+                    <div><img src="../images/htmlicon.svg" alt="HTML 5 icon" width="90"><br>HTML</div>
+                    <div><img src="../images/cssicon.svg" alt="CSS 3 icon" width="90"><br>CSS</div>
+                    <div><img src="../images/designicon.svg" alt="grouped object icon" width="100"><br>Graphic Design</div>
+                    <div><img src="../images/journalism.svg" alt="newspaper icon" width="100"><br>Journalism</div>
+                    <div><img src="../images/socialmedia.svg" alt="hashtag icon" width="100"><br>Social Media</div>
+            </div>
+
+            <aside class="flexbox2">
+
+                
+                    <div>
+                        <header><h2 class="skillstitle">Additional Skills</h2></header>
+                        <p>
+                            Marketing <br>
+                            Video Editing <br>
+                            Reporting <br>
+                            Bootstrap <br>
+                            Data Analysis 
+                        </p>
+                    </div>
+            </aside>
+        </div>
+</main>
+</body>
+</html>

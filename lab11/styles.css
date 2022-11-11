@@ -1,0 +1,39 @@
+body {background-color: #dde5b6; }
+
+p, ul {color: #395B64; }
+
+h1, h2, h3, h4 {color: #06283D; }
+
+a {color: #395B64; }
+
+caption, th {color:#06283D; text-align: center;}
+
+caption {font-size: 1.5em;}
+
+td {color:#395B64; }
+
+.evenrow {background-color: #f0ead2; }
+
+label {color:#395B64; }
+
+nav {background-color: #bbd686; }
+
+nav a {color:#06283D; }
+
+nav a:hover {background-color: #dde5b6; }
+
+nav {padding: 10px;}
+
+nav {margin-bottom: 30px;}
+
+@media only screen and (max-width: 600px)
+    {
+        nav a {
+            max-width: 100%; 
+            display: block;
+            line-height: 2.5em;
+        }
+        span {
+            display: none;
+        }
+    }
