@@ -1,8 +1,6 @@
 body {
     background-color: #ffdccc;
     margin: 30px;
-
-    
     }
 
 body {margin-top: 30px; margin-left: 10px; margin-left: 60px;}
@@ -11,8 +9,6 @@ body {margin-top: 30px; margin-left: 10px; margin-left: 60px;}
     nav a:hover {background-color: #dde5b6; }
 
     nav a {color:#5d2a42; }
-
-    nav {margin-top: 20px;}
     
 
 /* detials/accents */
@@ -37,7 +33,9 @@ img {width: 50%;}
 
 h1, h2, h3, nav {color: #5d2a42;}
 
-h2, h3, h4 {text-align: center;}
+h1 {padding: 100px;}
+
+h2, h3 {text-align: center;}
 
 style {margin: 10px; }
 
@@ -52,3 +50,12 @@ style {margin: 10px; }
             display: none;
         }
     }
+
+
+    section.projects {
+        margin: 60px;
+        background-color: #fff9ec;
+        padding: 10px;
+    }
+
+    
