@@ -39,6 +39,10 @@ h2, h3 {text-align: center;}
 
 style {margin: 10px; }
 
+p, li, nav {font-family: 'Crimson Text', serif;}
+h1, h2, h3, h4 {font-family: 'Racing Sans One', cursive;}
+
+
 @media only screen and (max-width: 600px)
     {
         nav a {
@@ -57,5 +61,94 @@ style {margin: 10px; }
         background-color: #fff9ec;
         padding: 10px;
     }
+
+/* DESIGN */
+
+.parentpics {
+    display: flex;
+    margin-left: 60px;
+    margin-right: 80px;
+    
+    
+}
+
+.column1 img, .column2 img, .column3 img, .column4 img {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+
+}
+
+.column1 {flex: 1;}
+
+.column2 {flex: 1;}
+
+.column3 {flex: 1;}
+
+.column4 {flex: 1;}
+
+
+
+.aboutme, .favorites, .recreate {margin: 60px;}
+
+
+
+section.aboutme {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+
+}
+
+.bioandskills {
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+
+}
+
+#me {
+    width: 100%;
+}
+
+
+
+/* header and nav*/
+
+header.logo {
+    text-align: center;
+}
+
+.navbar, .parentnavbox {display: flex;}
+
+.parentnavbox {margin: 60px; }
+
+.navbar {justify-content: flex-end;}
+
+/* header and nav*/
+
+section.projects {
+    display: flex;
+}
+
+.project1images, .project2images {
+    display: flex;
+}
+
+.images1, .images2 {
+    width: 20em;
+}
+
+.projectdesc1 {
+    width: 40em;
+}
+
+.project1, .project2 {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em;
+    flex-wrap: wrap;
+}
 
     
