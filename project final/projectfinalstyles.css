@@ -1,0 +1,287 @@
+#skip {
+        background-color: #dde5b6;
+        border: 1px solid black;
+        padding: 2px;
+        position: absolute; /* out of page flow for layout */
+        left: -999px;
+    }
+
+#skip:focus {
+        left: 10px;
+        top: 30px;
+    }
+
+body {
+    background-color: #ff85a1; margin: 30px;
+    }
+
+    body {margin-top: 20px;}
+
+/* nav bar */
+    nav a:hover {background-color: #fbb1bd; }
+
+    nav a {
+        color:#da627d; 
+        padding: 20px; 
+        font-family: 'Cabin', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .navbar {display: flex; justify-content: center;}
+
+
+/* header */
+
+header.logo {
+    text-align: center;
+}
+    
+
+/* detials/accents */
+
+    hr {
+        background-color: #A53860;
+        height: 5px;
+        border: none;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+/* images */
+
+img {width: 50%;}
+
+.me {width: 20%;}
+
+/* fonts */
+
+h1, h2, h3, h4, nav, .caption, .moodycolumn p, .jerkshoot p {color: #f9bec7; }
+
+h1 {padding: 100px;}
+
+h2, h3, .caption {text-align: center;}
+
+style {margin: 10px; }
+
+p, li, nav {font-family: 'Cabin', sans-serif;}
+h1, h2, h3, h4 {font-family: 'Racing Sans One', cursive;}
+
+
+@media only screen and (max-width: 600px)
+    {
+        nav a {
+            max-width: 100%; 
+            display: block;
+            line-height: 2.5em;
+        }
+        span {
+            display: none;
+        }
+    }
+
+
+/* DESIGN---------------------------------------------- */
+
+.aboutme, .favorites, .recreate {margin: 60px;}
+
+/* GALLERY */
+
+.parentpics {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px;
+}
+
+
+.column1 img, .column2 img, .column3 img, .column4 img {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.column1 {flex: 1; padding: 0 4px;}
+
+.column2 {flex: 1; padding: 0 4px;}
+
+.column3 {flex: 1; padding: 0 4px;} 
+
+.column4 {flex: 1; padding: 0 4px;}
+
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column1, .column2, .column3, .column4 {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .favproducts, section.aboutme, .bioandskills, .prod1, .prod2, .prod3, .prod4, .prod5, .prod6, .recreate {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+/* about me */
+
+section.aboutme {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    margin: 60px;
+    background-color: #da627d;
+
+}
+
+.bioandskills {
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+
+}
+
+#me {
+    width: 100%;
+}
+
+/* projects */
+
+section.projects {
+    margin: 60px;
+    background-color: #fff9ec;
+    padding: 10px;
+}
+
+section.projects {
+    display: flex;
+}
+
+.project1images, .project2images {
+    display: flex;
+}
+
+.images1, .images2 {
+    width: 20em;
+}
+
+.projectdesc1 {
+    width: 40em;
+}
+
+.project1, .project2 {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em;
+    flex-wrap: wrap;
+}
+
+/* project slideshow */
+
+#slideshow-container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#bigimages {
+    width: 100%;
+}
+
+#thumbnails {
+    clear: both;
+    padding-top: 10px;
+    text-align: center;
+} 
+
+#moodycover, #jerkcover {
+    width: 300px;
+    padding: 10px;
+}
+
+#moodyshoot, #jerkwinter {display: none;}
+
+.moodycolumn, .jerkshoot {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jerkshoot {
+    clear: both; 
+    padding: 10px;
+    align-items: center;
+}
+
+.moodycolumn img {
+    width: 700px;
+}
+
+.jerkimg {
+    display: flex;
+    padding: 10px;
+    float: right;
+}
+
+
+/* fav products */
+
+.favproducts {
+    display: flex;
+    padding: 2em;
+    background-color: #da627d;
+    align-items: center;
+}
+
+.prod1 {flex: 1; padding: 10px;}
+
+.prod2 {flex: 1; padding: 10px;}
+
+.prod3 {flex: 1;padding: 10px;}
+
+.prod4 {flex: 1; padding: 10px;}
+
+.prod5  {flex: 1;padding: 10px;}
+
+.prod6 {flex: 1;padding: 10px; }
+    
+/* RECREATE */
+
+section.recreate {
+    margin: 60px;
+    padding: 10px;
+
+}
+
+section.recreate {
+    display: flex;
+}
+
+.recreate1, .recreate2 {
+    background-color: #da627d;
+    padding: 10px;
+    width: 800px;
+}
+
+.images1, .images2 {
+    width: 54%;
+}
+
+.projectdesc1 {
+    width: 40em;
+}
+
+.project1, .project2 {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+/*https://coolors.co/palette/f9dbbd-ffa5ab-da627d-a53860-450920 */
